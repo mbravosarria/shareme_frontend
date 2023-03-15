@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 
 import { NavBar, Feed, PinDetails, CreatePin, Search } from "./";
 
