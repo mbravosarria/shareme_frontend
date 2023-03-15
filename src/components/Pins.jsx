@@ -1,10 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import { NavBar, Feed, PinDetails, CreatePin, Search } from "./";
 
 const Pins = ({ user }) => {
   const [searchTerm, setSearchTerm] = useState(null);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!user) navigate("/login");
+  }, []);
 
   return (
     <div className="px-2 md:px-5">
