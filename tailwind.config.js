@@ -1,7 +1,6 @@
 module.exports = {
-  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
-  darkMode: false, // or 'media' or 'class'
-  tailwindConfig: './styles/tailwind.config.js',
+  content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+  tailwindConfig: "./styles/tailwind.config.js",
   theme: {
     extend: {
       margin: {
@@ -92,4 +91,4 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-}
+};
